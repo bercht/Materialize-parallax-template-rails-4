@@ -1,0 +1,30 @@
+.container
+  h1 Listing Clients
+  .card-panel
+    table.bordered
+      thead
+        tr
+          th Name
+          th Email
+          th Telephone
+          th Message
+          th 
+
+      tbody>
+        - @clients.each do |client| 
+          tr
+            td = client.name
+            td = client.email
+            td = client.telephone
+            td = client.message
+            td = link_to 'Show', client, class: 'btn-flat'
+            td = link_to 'Edit', edit_client_path(client), class: 'btn-flat'
+            td = link_to 'Destroy', client, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn-flat'
+
+
+  br
+
+
+  = link_to 'New Client', new_client_path, class: 'waves-effect waves-light btn'
+
+

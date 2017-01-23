@@ -1,0 +1,22 @@
+.card-panel
+  = simple_form_for @client do |f|
+    
+  
+    h3 = f.error_notification
+    h3 = notice
+  
+    form
+      .row
+        .input-field
+          = f.input :name, label: 'Nome completo'
+        .input-field
+          = f.input :email, label: 'Email'
+        .input-field
+          = f.input :telephone, label: 'Telefone para contato'
+        .input-field
+          = f.input :message, label: 'Mensagem'
+      .row.center-align
+        = f.button :submit, 'Enviar cadastro', class: 'waves-effect waves-light btn'
+          
+
+

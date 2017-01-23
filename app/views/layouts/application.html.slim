@@ -1,0 +1,21 @@
+doctype html
+
+head
+  meta content="width=device-width, initial-scale=1.0" name="viewport"
+  title Bercht - Materialize Css Rails 4 Template
+  = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+  = stylesheet_link_tag    'https://fonts.googleapis.com/icon?family=Material+Icons', media: 'all', 'data-turbolinks-track' => true
+  = stylesheet_link_tag    'https://fonts.googleapis.com/css?family=Roboto:400,300,700', media: 'all', 'data-turbolinks-track' => true
+  = javascript_include_tag 'application', 'data-turbolinks-track' => true
+  = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js", 'data-turbolinks-track' => true
+  
+  = csrf_meta_tags
+
+body
+    - if flash.any?
+    	javascript:
+    		$(function(){Materialize.toast("#{notice}", 5000);});	
+
+	= yield 
+
+

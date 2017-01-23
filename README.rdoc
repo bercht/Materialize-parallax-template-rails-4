@@ -1,0 +1,13 @@
+== README
+
+Base Rails 4 App using Materialize CSS Framework
+
+
+HEROKU
+Before deploy, run the command:
+
+			bundle exec rake assets:precompile
+
+Have Fun !
+
+
