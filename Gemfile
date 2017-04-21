@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'materialize-sass'
 gem 'simple_form'
 gem 'slim-rails'
-
+gem 'high_voltage', '~> 3.0.0'
 
 gem 'rails', '4.2.5.1'
 gem 'pg', '~> 0.15'

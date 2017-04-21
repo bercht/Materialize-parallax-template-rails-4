@@ -1,32 +1,33 @@
   nav.white role="navigation"
     .nav-wrapper.container
       =link_to 'Logo', root_url, class: "brand-logo", id: "logo-container"
-      
+
       ul.right.hide-on-med-and-down
         li = link_to 'Clients', clients_path
-     
+        li = link_to 'About', page_path('about')
+
 
       ul#nav-mobile.side-nav
         li = link_to 'Clients', clients_path
-      
+
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
   .parallax-container
     .section.no-pad-bot
       .container
-        
+
         h1.header.center.teal-text.text-lighten-2 Parallax Template
         .row.center
           h5.headercol.s12.light A modern responsive front-end framework based on Material Design
-        
+
         .row.center
           =link_to 'Get Started', 'http://materializecss.com/getting-started.html', id: "download-button", class: "btn-large waves-effect waves-light teal lighten-1"
-       
+
     .parallax
       =image_tag 'background1.jpg'
 
-  
+
 
 
   .container
@@ -55,9 +56,9 @@
             h5.center Easy to work with
 
             p.light We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.
-         
 
- 
+
+
 
   .parallax-container.valign-wrapper
     .section.no-pad-bot
@@ -66,7 +67,7 @@
           h5.header.col.s12.light A modern responsive front-end framework based on Material Design
     .parallax
       = image_tag "background2.jpg", alt: "Unsplashed background img 2"
- 
+
   .container
     .section
 
@@ -75,10 +76,10 @@
           .icon-block
             h2.center.brown-text
               i.material-icons send
-          
+
           h4 Contact Us
           p.left-align.light Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-  
+
 
 
   .parallax-container.valign-wrapper
@@ -97,23 +98,23 @@
           p.grey-text.text-lighten-4 We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.
 
 
-      
+
         .col.l3.s12
-          h5.class.white-text Settings 
+          h5.class.white-text Settings
           ul
             li =link_to "Link 1"
             li =link_to "Link 2"
             li =link_to "Link 3"
             li =link_to "Link 4"
         .col.l3.s12
-          h5.class.white-text Settings 
+          h5.class.white-text Settings
           ul
             li =link_to "Link 1"
             li =link_to "Link 2"
             li =link_to "Link 3"
-            li =link_to "Link 4" 
- 
+            li =link_to "Link 4"
+
     .footer-copyright
       .container
-        span Made by #{link_to Materialize, "http://materializecss.com"} 
-    
+        span Made by #{link_to Materialize, "http://materializecss.com"}
+
