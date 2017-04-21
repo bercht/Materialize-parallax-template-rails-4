@@ -1,0 +1,14 @@
+  nav.white role="navigation"
+    .nav-wrapper.container
+      =link_to 'Logo', root_url, class: "brand-logo", id: "logo-container"
+
+      ul.right.hide-on-med-and-down
+        li = link_to 'Clients', clients_path
+        li = link_to 'Components', page_path('components')
+        li = link_to 'About', page_path('about')
+
+
+      ul#nav-mobile.side-nav
+        li = link_to 'Clients', clients_path
+
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
